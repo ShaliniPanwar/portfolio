@@ -7,31 +7,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+      .nav-link {
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    
+      .nav-link:hover {
+        animation: bounce 0.5s infinite;
+      }
+    
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+    </style>
+    
 </head>
 <body>
-    <div id="header" class="p-3 mb-2">
-        <nav class="navbar" style="background-color: #e3f2fd;">
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#sample-work">Sample Work</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
+  <div id="header" class="p-1 mb-2">
+    <nav class="navbar bg-dark">
+      <ul class="nav nav-pills nav-fill rounded-2">
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#sample-work">Sample Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
-    </div>
+  </div>
     <div id="about" class="text-center bg-danger-subtle">
         <br>
-        <img src="./S.jpeg" class="rounded-circle" width="200px" alt="Shalini Panwar"> 
+        <img src="./S.jpeg" class="rounded-circle" width="150px" alt="Shalini Panwar"> 
         <h3>Shalini Panwar</h3>
         <h5>Web Developer</h5>
         <i class="fa fa-graduation-cap" style="font-size:36px"></i>
-        <p>Master of Computer Application, Bachelor of Science (Information technology)</p>
-        <hr class="border border-primary border-3 opacity-30">
+        <p>Master of Computer Application<br>Bachelor of Science (Information technology)</p>
+        <hr class="border border-dark border-3 opacity-30">
         <h6>HTML | CSS | JavaScript | Bootstrap | React</h6>
         <p>A front end web developer with an affinity towards anything that brings technology and aesthetics together.</p>
         <div id="certifications">
@@ -65,44 +90,27 @@
               </div>
         </div> 
     </div>
-    <div id="sample-work" class="grid text-center">
-        <br>
-        <i class="fa fa-code" style="font-size:36px"></i><br>
-        <h3>Sample Work</h3>
-        <span>
-            <h5 class="bg-danger-subtle">Bill Share Calculator</h5>
-            <a target="_blank" href="https://billsharecalculator.shpanwar.repl.co/"><img src="./billShareCalculator.png" class="img-thumbnail" width="200px" alt="Shalini Panwar"></a>
-            <p>HTML | CSS | JavaScript<br>Calculates the share per person based on the input: total bill, tip percentage, number of people.</p>
-        </span>
-        <span>
-            <h5 class="bg-danger-subtle">Drum Machine</h5>
-            <a target="_blank" href="https://codepen.io/ShaliniPanwar-the-styleful/full/YzOoWeG"><img src="./drumMachine.png" class="img-thumbnail" width="200px" alt="Shalini Panwar"></a>
-            <p>HTML | CSS | Bootstrap | JavaScript | React<br>A drum pad that simulates a drum to play various sounds and displays the current sound as it is being played.</p>
-        </span>
-        <span>
-            <h5 class="bg-danger-subtle">Calculator</h5>
-            <a target="_blank" href="https://codepen.io/ShaliniPanwar-the-styleful/full/XWPLmzw"><img src="./calculator.png" class="img-thumbnail" width="200px" alt="Shalini Panwar"></a>
-            <p>HTML | CSS | JavaScript | React<br>A calculator for basic mathematical operations.</p>
-        </span>
-        <span>
-            <h5 class="bg-danger-subtle">Random Quote Generator</h5>
-            <a target="_blank" href="https://shalinipanwar.github.io/random-quote-generator/"><img src="./randomQuoteGen.png" class="img-thumbnail" width="200px" alt="Shalini Panwar"></a>
-            <p>HTML | CSS | Bootstrap | JavaScript<br>Generates a random quote upon clicking of a button. Allows sharing it to twitter.</p>
-        </span>
-        <span>
-            <h5 class="bg-danger-subtle">Superhero API</h5>
-            <a target="_blank" href="https://superheroapi.shpanwar.repl.co/"><img src="./superhero.png" class="img-thumbnail" width="200px" alt="Shalini Panwar"></a>
-            <p>HTML | CSS | Bootstrap | JavaScript<br>Uses an API to generate a superhero's image and stats based on keyword based search or random search.</p>
-        </span>
-    </div>
+    <div id="sample-work" class="grid text-center mx-auto m-2">
+      <i class="fa fa-code" style="font-size:36px"></i><br>
+      <h3>Sample Work</h3>
+      <div class="card mx-auto d-flex align-items-center" style="width: 90%">
+          <img src="./PlanrBud.png" class="card-img-top" alt="PlanrBud screenshot" style="width: 25rem;">
+          <div class="card-body">
+              <h5 class="card-title">PlanrBud</h5>
+              <p class="card-text">A weekly planner app that includes:<br>To-do list, Grocery list, <br>Budget component, Menu planner, <br>Outings: suggestions, bucket list</p>
+              <h6>React JS | JavaScript | HTML | CSS | Bootstrap</h6>
+              <a href="https://shalinipanwar.github.io/planrbud/" class="btn btn-primary">See it here!</a>
+          </div>
+      </div>
+  </div>  
     <div id="contact" class="bg-danger-subtle text-center">
         <br>
         <h4 class="text-center">Let's connect!</h4>
         <div class="row">
-            <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="col-sm-4 mb-1 mb-sm-0">
               <div class="card bg-danger-subtle border-0">
                 <div class="card-body text-center">
-                    <i class="material-icons" style="font-size:36px">contact_mail</i>
+                    <i class="material-icons" style="font-size:20px">contact_mail</i>
                     <p><a href="mailto: shalini.panwar89@gmail.com" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">shalini.panwar89@gmail.com</a></p>
                 </div>
               </div>
@@ -110,7 +118,7 @@
             <div class="col-sm-4">
                 <div class="card bg-danger-subtle border-0">
                   <div class="card-body text-center">
-                    <i class="fa fa-map-marker" style="font-size:36px"></i><br>
+                    <i class="fa fa-map-marker" style="font-size:20px"></i><br>
                     Toronto, Canada
                   </div>
                 </div>
@@ -118,7 +126,7 @@
             <div class="col-sm-4">
               <div class="card bg-danger-subtle border-0">
                 <div class="card-body text-center">
-                    <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                    <i class="fa fa-linkedin-square" style="font-size:20px"></i>
                     <p><a href="https://www.linkedin.com/in/shalini-panwar-280941110/" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">LinkedIn</a></p>
                 </div>
               </div>
