@@ -8,10 +8,10 @@
   }
 
   .nav-link:hover {
-    animation: bounce 0.5s infinite;
+    animation: nav-bounce 0.5s infinite;
   }
 
-  @keyframes bounce {
+  @keyframes nav-bounce {
     0%, 100% {
       transform: translateY(0);
     }
@@ -24,26 +24,23 @@
     text-decoration: none;
   }
 
-.certification {
+  .certification {
     position: relative;
-    animation: mymove 5s infinite;
-    animation-timing-function: linear;
 }
 
 .certification:hover {
-    animation: bounce 0.5s linear;
-    animation-fill-mode: forwards;
-}
-
-@keyframes mymove {
-    0%   { left: -10px; }
-    25%  { left: 10px; }
-    50%  { left: -10px; }
-    75%  { left: 10px; }
-    100% { left: -10px; }
+    animation: bounce 0.5s infinite linear;
 }
 
 @keyframes bounce {
-    0%, 100% { top: 0px; }
-    50% { top: -10px; }
+    0%, 100% { left: -10px; }
+    50% { left: 10px; }
 }
+
+
+
+
+
+
+
+
