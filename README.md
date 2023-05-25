@@ -1,6 +1,6 @@
 # portfolio
 
-About Shalini Panwar
+About Shalini Panwar, Web Developer
 *************************************
 
 *Projects
@@ -8,3 +8,7 @@ About Shalini Panwar
 *Certifications
 
 *Qualifications
+
+*Skills
+
+*Contact 

@@ -19,7 +19,7 @@ body {
 
 .nav-link:hover {
   animation: bounce2 0.5s infinite;
-  color:black;
+  color:rgba(0, 0, 0, 0.944);
 }
 
 .connection:hover {
