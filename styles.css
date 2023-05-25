@@ -1,42 +1,82 @@
 .nav-link {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-  }
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  .nav-link:hover {
-    animation: nav-bounce 0.5s infinite;
-  }
+.nav-link:hover {
+  animation: nav-bounce 0.5s infinite;
+}
 
-  @keyframes nav-bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
+@keyframes nav-bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-
-  a {
-    text-decoration: none;
+  50% {
+    transform: translateY(-5px);
   }
+}
 
-  .certification {
-    position: relative;
+a {
+  text-decoration: none;
+}
+
+.certification {
+  position: relative;
 }
 
 .certification:hover {
-    animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
 }
 
 @keyframes bounce {
-    0%, 100% { left: -10px; }
-    50% { left: 10px; }
+  0%, 100% { 
+    left: -10px; 
+  }
+  50% { 
+    left: 10px; 
+  }
 }
 
+@keyframes color {
+  0%   { background: #33CCCC; }
+  50%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+}
+
+body {
+  background: #33CCCC; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+}
+
+.image-overlay {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 3px solid transparent;
+  border-right-color: #000;
+}
+
+* {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
 
 
 
