@@ -1,3 +1,7 @@
+* {
+  font-family: 'Courier New', monospace;
+}
+
 .nav-link {
   position: relative;
   display: inline-block;
@@ -9,6 +13,7 @@
 
 .nav-link:hover {
   animation: nav-bounce 0.5s infinite;
+  color:black
 }
 
 @keyframes nav-bounce {
@@ -42,7 +47,7 @@ a {
 }
 
 body {
-  background: #33CCCC; 
+  background: #191f1f; 
   text-align: center;
   padding: 2em;
 }
@@ -67,10 +72,6 @@ body {
   border-right-color: #000;
 }
 
-* {
-  font-family: 'Courier New', monospace;
-  font-weight: bold;
-}
 
 
 
