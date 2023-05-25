@@ -41,15 +41,8 @@ a {
   }
 }
 
-@keyframes color {
-  0%   { background: #33CCCC; }
-  50%  { background: #33CC36; }
-  100% { background: #33CCCC; }
-}
-
 body {
-  background: #33CCCC; /* Fallback */
-  animation: color 9s infinite linear;
+  background: #33CCCC; 
   text-align: center;
   padding: 2em;
 }
@@ -58,6 +51,7 @@ body {
   position: absolute;
   left: 0;
   z-index: 1;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navbar::before {
