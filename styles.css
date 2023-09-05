@@ -87,18 +87,20 @@ a {
 
 .cube {
   width: 100px;
-  height: 100px;
+  height: 50px;
   position: relative;
   transform-style: preserve-3d;
   animation: rotate 6s infinite linear;
-  margin-bottom: 20px;
 }
 
 .face {
   position: absolute;
   width: 100px;
-  height: 100px;
+  height: 50px;
   opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .front {
