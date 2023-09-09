@@ -87,7 +87,7 @@ a {
 
 .cube {
   width: 100px;
-  height: 50px;
+  height: 60px;
   position: relative;
   transform-style: preserve-3d;
   animation: rotate 6s infinite linear;
@@ -96,7 +96,7 @@ a {
 .face {
   position: absolute;
   width: 100px;
-  height: 50px;
+  height: 60px;
   opacity: 0.9;
   display: flex;
   justify-content: center;
@@ -128,14 +128,7 @@ a {
   100% { transform: rotateY(360deg); }
 }
 
-.cube1 {
-  margin-right: 30px;
-}
 
-.cube2 {
-  margin-top: 30px;
-  margin-left: 30px;
-}
 
 .developer {
   text-align: right;
