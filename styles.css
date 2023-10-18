@@ -6,6 +6,18 @@ body {
   background: #191f1f; 
   text-align: center;
   padding: 2em;
+  position: relative;
+  min-height: 100vh;
+}
+
+#developer-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#Home {
+  text-align: left;
 }
 
 .nav-link {
@@ -90,55 +102,7 @@ a {
   animation: star-rotate 2s linear infinite;
 }
 
-.cube {
-  width: 100px;
-  height: 60px;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: rotate 6s infinite linear;
-}
 
-.face {
-  position: absolute;
-  width: 100px;
-  height: 60px;
-  opacity: 0.9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.front {
-  background-color: #ff5733;
-  transform: translateZ(50px);
-}
-
-.back {
-  background-color: #7cb342;
-  transform: rotateY(180deg) translateZ(50px);
-}
-
-.right {
-  background-color: #039be5;
-  transform: rotateY(90deg) translateZ(50px);
-}
-
-.left {
-  background-color: #e91e63;
-  transform: rotateY(-90deg) translateZ(50px);
-}
-
-@keyframes rotate {
-  0% { transform: rotateY(0deg); }
-  100% { transform: rotateY(360deg); }
-}
-
-
-
-.developer {
-  text-align: right;
-  text-shadow: #fff;
-}
 
 
 
