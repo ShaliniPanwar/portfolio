@@ -6,14 +6,6 @@ body {
   background: #191f1f; 
   text-align: center;
   padding: 2em;
-  position: relative;
-  min-height: 100vh;
-}
-
-#developer-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 #Home {
