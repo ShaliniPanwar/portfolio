@@ -1,16 +1,17 @@
-* {
-  font-family: 'Courier New', monospace;
-}
-
 body {
   background: #191f1f; 
   text-align: center;
   padding: 2em;
+  font-family: 'Courier New', monospace;
 }
 
-.thumbnail {
-  width: 100px; 
-  height: 100px; 
+.verdana {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.thumbnail{
+  width: 150px; 
 }
 
 #Home {
