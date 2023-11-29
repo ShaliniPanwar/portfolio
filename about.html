@@ -11,7 +11,12 @@
     <link href="./styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
-<body>
+<body background="./background2.png">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.body.classList.add('loaded');
+    });
+  </script>
   <div id="header" class="p-1 mb-2 text-dark">
     <div class="navbar rounded-0 d-flex justify-content-end position-relative" style="background-image: linear-gradient(to right, #191f1f, hsla(202, 28%, 92%, 0.376));" height="150px"> 
       <ul class="nav">
@@ -30,12 +35,12 @@
   <div id="about" class="text-center">
     <div class="row text-light mt-2">
       <div class="col-sm-3 mx-auto m-5">
-      <img src="./Shalini-image.png" class="rounded-circle img-fluid mt-5" alt="Shalini Panwar">
+      <img src="./Shalini-image.png" class="rounded-circle img-fluid mt-2" alt="Shalini Panwar">
       </div>
       <div class="col-sm-9 mx-auto mt-2">
         <div>
           <h2 class="text-warning"><b>Shalini Panwar</b></h2>
-          <h6><b>Instructional Designer | eLearning Developer<br>Technology Educator | Front End Web Developer</b></h6>
+          <h6><b>Instructional Designer | eLearning Developer<br>Technology Educator | Front End Web Developer</b></h6><br>
         </div>
         <div class="verdana"><p>A Learning Experience Designer with <span class="text-warning">7+ years</span> of experience in <span class="text-warning">training adults (teachers)</span> on effective usage of technology, and <span class="text-warning">teaching technology based content & coding</span> to students of all ages
          based on various national/ international curricula, systems, and programmes - CBSE, Cambridge K12, 
@@ -43,99 +48,289 @@
         <br><br>
         A digital native, skilled in <span class="text-warning">Articulate Storyline and Rise, PowerPoint, Canva, Camtasia, Snagit, HTML, CSS, and JavaScript</span>, 
         who can merge tech and education to craft captivating 
-        learning solutions based on <span class="text-warning">adult learning principles/ theories, 
-        and Instructional Design methodologies/ models</span> such as -<br>ADDIE, Gagne's Nine Events of Instruction, 
-          Action Mapping, Kirkpatrick's Model of Evaluation, Bloom's Taxonomy, Mayer's Principles of Multimedia Learning, 
-          and Visual Design Principles.
+        learning solutions based on <span class="text-warning">adult learning principles/ theories, ID methodologies/ models</b></span> such as -<br>ADDIE, Gagne's Nine Events of Instruction, 
+        Action Mapping, Kirkpatrick's Model of Evaluation, Bloom's Taxonomy, Mayer's Principles of Multimedia Learning, 
+        and Visual Design Principles.<b>
         <br><br>
         <span class="text-warning">From coding to content creation, I can effectively <br>bridge the gap between knowledge and its effective delivery.</span>
         </p></div>
-        </div>
+        <a href="./work.html"><button class="btn btn-outline-warning text-light"><b>View Sample Work</b></button></a>
+      </div>
     </div>
-    <hr class="border border-light border-2 opacity-30">
+    <hr class="border border-warning border-2 opacity-30">
     <div class="row">
       <div class="about-2 mx-auto text-light">
         <i class="fa fa-graduation-cap mb-2 text-warning" style="font-size:65px"></i>
         <h6><b>Education</b></h6>
-        <h6><i class="fas fa-star text-warning"></i> Master of Computer Application</h6>
-        <h6><i class="fas fa-star text-warning"></i> Bachelor of Science (IT)</h6>
-        <h6><i class="fas fa-star text-warning"></i> Bachelor of Education (Computer Science, English)</h6>
+        <h6 class="verdana"><i class="fas fa-star text-warning"></i> Master of Computer Application <i class="fas fa-star text-warning"></i></h6>
+        <h6 class="verdana"><i class="fas fa-star text-warning"></i> Bachelor of Science (IT) <i class="fas fa-star text-warning"></i></h6>
+        <h6 class="verdana"><i class="fas fa-star text-warning"></i> Bachelor of Education (Computer Science, English) <i class="fas fa-star text-warning"></i></h6>
       </div>
     </div>   
-    <hr class="border border-light border-2 opacity-30">
+    <hr class="border border-warning border-2 opacity-30">
     <div class="row">
       <div class="about-2 mx-auto text-light">
         <i class="fas fa-cogs mb-2 text-warning" style="font-size:65px"></i>
-        <h6><b>Technical Skills</b></h6>
-        <div class="row text-light">
-        <div class="col-sm-3 text-center">
-          <h6><i class="fas fa-star text-warning"></i> Articulate Storyline</h6>
-          <h6><i class="fas fa-star text-warning"></i> Articulate Rise</h6>
-          <h6><i class="fas fa-star text-warning"></i> Snagit</h6>
-          <h6><i class="fas fa-star text-warning"></i> Camtasia</h6>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h6><i class="fas fa-star text-warning"></i> Canva</h6>
-          <h6><i class="fas fa-star text-warning"></i> Storyboarding</h6>
-          <h6><i class="fas fa-star text-warning"></i> HTML 5</h6>
-          <h6><i class="fas fa-star text-warning"></i> CSS</h6>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h6><i class="fas fa-star text-warning"></i> MS Teams</h6>
-          <h6><i class="fas fa-star text-warning"></i> Zoom</h6>
-          <h6><i class="fas fa-star text-warning"></i> Google Workspace</h6>
-          <h6><i class="fas fa-star text-warning"></i> Microsoft Office</h6>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h6><i class="fas fa-star text-warning"></i> Git Version Control</h6>
-          <h6><i class="fas fa-star text-warning"></i> Visual Studio Code</h6>
-          <h6><i class="fas fa-star text-warning"></i> ReactJS</h6>
-          <h6><i class="fas fa-star text-warning"></i> JavaScript</h6>
-        </div>
-      </div>
+        <h6><b>Skills</b><br><i>(Click view icon to see skill in action)</i></h6>
+        <div class="row text-light d-flex justify-content-center">
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Web Development</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>HTML</span>
+                  <a href="https://www.shalinipanwar.com/" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>CSS | Bootstrap</span>
+                  <a href="https://www.shalinipanwar.com/" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Web development</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>JavaScript | ReactJS</span>
+                  <a href="https://shalinipanwar.github.io/planrbud/" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Git | VS Code</span>
+                  <a href="https://shalinipanwar.github.io/planrbud/" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div class="row text-light d-flex justify-content-center">
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Authoring Tools</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Articulate Storyline</span>
+                  <a href="HTML Quiz/story.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Articulate Rise</span>
+                  <a href="RisePasswordsMicroLearning/index.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Graphics | Animation</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Vyond</span>
+                  <a href="./Shalini's Story.mp4" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>
+                </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#canvaModal">
+                    <span>Canva</span>
+                    <i class="fas fa-eye text-warning"></i>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Video | Image Editing</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Camtasia</span>
+                  <!--<a href="HTML Quiz/story.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Snagit</span>
+                  <!--<a href="RisePasswordsMicroLearning/index.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>  
+        <div class="row text-light d-flex justify-content-center">
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Collaboration Tools</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>MS Teams</span>
+                  <!--<a href="HTML Quiz/story.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Google Workspace</span>
+                  <!--<a href="RisePasswordsMicroLearning/index.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Assessment & Survey</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Google Forms</span>
+                  <!--<a href="HTML Quiz/story.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>SurveyMonkey</span>
+                  <!--<a href="RisePasswordsMicroLearning/index.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Office Suites</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Microsoft 365</span>
+                  <!--<a href="HTML Quiz/story.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Apple iWork</span>
+                  <!--<a href="RisePasswordsMicroLearning/index.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>    
+        <div class="row text-light d-flex justify-content-center">
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Instructional Design</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>ID Theory</span>
+                  <!--<a href="HTML Quiz/story.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Needs Analysis</span>
+                  <!--<a href="RisePasswordsMicroLearning/index.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 m-1 text-center">
+            <div class="card text-light" style="width: 100%">
+              <div class="card-header bg-warning">
+                <b>Instructional Design</b>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Action Mapping</span>
+                  <!--<a href="HTML Quiz/story.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>Storyboarding</span>
+                  <!--<a href="RisePasswordsMicroLearning/index.html" target="_blank">
+                    <i class="fas fa-eye text-warning"></i>
+                  </a>-->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>    
       </div>
     </div>     
-      <hr class="border border-light border-2 opacity-30 mt-2">
+      <hr class="border border-warning border-2 opacity-30 mt-2">
         <div id="certifications" class="text-light">
           <br>
           <i class="fas fa-certificate mb-2 text-warning" style="font-size:65px"></i>
           <h6><b>Certifications</b><br><i>(Click for credentials)</i></h6>
-          <div class="row mt-1 text-light">
+          <div class="row mt-1 text-light d-flex justify-content-center">
             <div class="col-sm-4 mb-3 mb-sm-0 certification">
               <div class="text-center">
                 <i class="fas fa-certificate text-warning" style="font-size:36px"></i>
-                <h6><a target="_blank" href="https://www.udemy.com/certificate/UC-6f44f852-56a2-44a1-9055-3960e00d5fc2/" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">Instructional Design:<br>Classroom Training Essentials</a></h6>
-              </div>
-            </div>
-            <div class="col-sm-4 mb-3 mb-sm-0 certification">
-              <div class="text-center">
-                <i class="fas fa-certificate text-warning" style="font-size:36px"></i>
-                <h6><a target="_blank" href="https://www.udemy.com/certificate/UC-7625237e-c4a0-4720-8383-9b41610b91ff/" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">Create eLearning Courses<br>with Articulate Storyline 360</a></h6>
+                <h6><a target="_blank" href="https://www.udemy.com/certificate/UC-6f44f852-56a2-44a1-9055-3960e00d5fc2/" class="link-secondary verdana link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">Instructional Design:<br>Classroom Training Essentials</a></h6>
               </div>
             </div>
             <div class="col-sm-4 mb-3 mb-sm-0 certification">
               <div class="text-center">
                 <i class="fas fa-certificate text-warning" style="font-size:36px"></i>
-                <h6><a target="_blank" href="https://www.freecodecamp.org/certification/ShaliniPanwar/responsive-web-design" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">Responsive<br>Web Design</a></h6>
+                <h6><a target="_blank" href="https://www.udemy.com/certificate/UC-7625237e-c4a0-4720-8383-9b41610b91ff/" class="link-secondary verdana link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">Create eLearning Courses<br>with Articulate Storyline 360</a></h6>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3 mb-sm-0 certification">
+              <div class="text-center">
+                <i class="fas fa-certificate text-warning" style="font-size:36px"></i>
+                <h6><a target="_blank" href="https://www.freecodecamp.org/certification/ShaliniPanwar/responsive-web-design" class="link-secondary verdana link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">Responsive<br>Web Design</a></h6>
               </div>
             </div>
             </div>
-            <div class="row mt-1 text-light">
-            <div class="col-sm-6 mb-3 mb-sm-0 certification">
+            <div class="row mt-1 text-light d-flex justify-content-center">
+            <div class="col-sm-4 mb-3 mb-sm-0 certification">
               <div class="text-center">
                 <i class="fas fa-certificate text-warning" style="font-size:36px"></i>
-                <h6><a target="_blank" href="https://www.freecodecamp.org/certification/ShaliniPanwar/javascript-algorithms-and-data-structures" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">JavaScript Algorithms<br>& Data Structures</a></h6>
+                <h6><a target="_blank" href="https://www.freecodecamp.org/certification/ShaliniPanwar/javascript-algorithms-and-data-structures" class="link-secondary verdana link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">JavaScript Algorithms<br>& Data Structures</a></h6>
               </div>
             </div>
-            <div class="col-sm-6 mb-3 mb-sm-0 certification">
+            <div class="col-sm-4 mb-3 mb-sm-0 certification">
               <div class="text-center">
                 <i class="fas fa-certificate text-warning" style="font-size:36px"></i>
-                <h6><a target="_blank" href="https://www.freecodecamp.org/certification/ShaliniPanwar/front-end-development-libraries" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">Front End<br>Development Libraries</a></h6>
+                <h6><a target="_blank" href="https://www.freecodecamp.org/certification/ShaliniPanwar/front-end-development-libraries" class="link-secondary verdana link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-light">Front End<br>Development Libraries</a></h6>
               </div>
             </div>
           </div>
         </div>
-        <hr class="border border-light border-2 opacity-30">
+        <hr class="border border-warning border-2 opacity-30">
         <div id="contact" class="text-center text-light">
           <br>
           <i class="fas fa-address-card mb-3 text-warning" style="font-size:65px;"></i>
@@ -166,9 +361,54 @@
         </div>
       </div>
       <div class="text-light">
-        <hr class="border border-light opacity-30">
+        <hr class="border border-warning opacity-30">
         <p><i class="fas fa-code" style="font-size:12px"></i> Developed by Shalini Panwar</p>
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-L6+3SgpVXzPYCv6Gq4VRG9QfUjzF54v5Kg8vElVjg5w=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<div class="modal fade" id="canvaModal" tabindex="-1" aria-labelledby="canvaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="canvaModalLabel">Canva Samples</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<div id="canvaCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Canva1.jpg" class="d-block mx-auto" alt="Canva Image 1">
+      <div class="carousel-caption d-none d-md-block">
+        <p class="text-dark">Logo: Portfolio</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./Canva2.jpg" class="d-block mx-auto" alt="Canva Image 2">
+      <div class="carousel-caption d-none d-md-block">
+        <p class="text-dark">Logo: PlanrBud - Weekly planner app</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./Canva3.jpg" class="d-block mx-auto" alt="Canva Image 3">
+      <div class="carousel-caption d-none d-md-block">
+        <p class="text-dark">LinkedIn Header</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#canvaCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#canvaCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
   </body>
 </html>

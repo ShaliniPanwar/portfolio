@@ -1,5 +1,17 @@
+body * {
+  opacity: 0;
+}
+
+body * {
+  transition: opacity 0.7s ease-in-out;
+}
+
+body.loaded * {
+  opacity: 1;
+}
+
+
 body {
-  background: #191f1f; 
   text-align: center;
   padding: 2em;
   font-family: 'Courier New', monospace;
@@ -7,6 +19,7 @@ body {
 
 .verdana {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 14px;
 }
 
 
@@ -20,7 +33,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 .hover-effect {
   background-color: rgba(255, 255, 255, 0); 
-  transition: background-color 0.5s ease; 
+  transition: background-color 0.3s ease; 
 }
 
 .hover-effect:hover {
@@ -63,12 +76,16 @@ a {
   text-decoration: none;
 }
 
+.list-group-flush li {
+  text-align: left;
+}
+
 .certification {
   position: relative;
 }
 
 .certification:hover {
-  animation: bounce 0.5s infinite linear;
+  animation: bounce 0.9s infinite linear;
 }
 
 @keyframes bounce {
@@ -111,7 +128,14 @@ a {
 
 
 
+.carousel-control-prev, .carousel-control-next {
+  filter: invert(1) grayscale(100%); 
+}
 
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  filter: invert(0) grayscale(100%); 
+}
 
 
 
