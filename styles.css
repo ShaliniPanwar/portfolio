@@ -3,7 +3,7 @@ body * {
 }
 
 body * {
-  transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.9s ease-in-out;
 }
 
 body.loaded * {
@@ -137,5 +137,10 @@ a {
   filter: invert(0) grayscale(100%); 
 }
 
-
-
+@media (max-width: 576px) {
+  #canvaCarousel .carousel-caption {
+    position: static;
+    text-align: center;
+    margin-top: 10px; 
+  }
+}
