@@ -17,6 +17,11 @@ body {
   font-family: 'Courier New', monospace;
 }
 
+.project-details-container {
+  text-align: left;
+  margin-left: 30px;
+}
+
 .verdana {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 14px;
